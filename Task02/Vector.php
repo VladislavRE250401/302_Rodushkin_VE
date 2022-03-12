@@ -54,27 +54,27 @@ class Vector {
         $obj = new Vector(0,0,0);
         $obj->x = (int)$this->x * $number;
         $obj->y = (int)$this->y * $number;
-	    $obj->z = (int)$this->z * $number;
+	$obj->z = (int)$this->z * $number;
         echo "Произведение вектора $this на число $number = ";
         return $obj;
     }    
 	
-	public function scalarProduct($frac) 
+    public function scalarProduct($frac) 
     {
         $number = (int)$this->x * (int)$frac->x + (int)$this->y * (int)$frac->y + (int)$this->z * (int)$frac->z;
         echo "Скалярное произведение вектора $this на вектор $frac = ";
         return $number;
     }
 	
-	public function vectorProduct($frac)
-	{
-		$obj = new Vector(0,0,0);
-		$obj->x = (int)$this->y * (int)$frac->z - (int)$this->z * (int)$frac->y;
+    public function vectorProduct($frac)
+    {
+	$obj = new Vector(0,0,0);
+	$obj->x = (int)$this->y * (int)$frac->z - (int)$this->z * (int)$frac->y;
         $obj->y = (int)$this->x * (int)$frac->z - (int)$this->z * (int)$frac->x;
-	    $obj->z = (int)$this->x * (int)$frac->y - (int)$this->y * (int)$frac->x;
+	$obj->z = (int)$this->x * (int)$frac->y - (int)$this->y * (int)$frac->x;
         echo "Векторное произведение $this на $frac = ";
         return $obj;
-	}
+    }
 
     function __toString() 
     {
