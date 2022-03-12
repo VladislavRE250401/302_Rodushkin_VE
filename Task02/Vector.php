@@ -83,5 +83,5 @@ class Vector {
     }
 
 }
-?>
 
+?>

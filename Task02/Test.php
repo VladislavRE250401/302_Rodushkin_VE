@@ -29,3 +29,4 @@ function runTest()
 	echo $obj6 . PHP_EOL;
   
 }
+?>
