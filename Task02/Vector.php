@@ -1,5 +1,4 @@
 <?php
-
 class Vector {
     public $x, $y, $z;
 
@@ -81,7 +80,6 @@ class Vector {
     {
 	return '('.$this->x.';'.$this->y.';'.$this->z.')';
     }
-
 }
-
 ?>
+
