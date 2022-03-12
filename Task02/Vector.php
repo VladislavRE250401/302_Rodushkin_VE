@@ -70,7 +70,7 @@ class Vector {
     {
 	$obj = new Vector(0,0,0);
 	$obj->x = (int)$this->y * (int)$frac->z - (int)$this->z * (int)$frac->y;
-        $obj->y = (int)$this->x * (int)$frac->z - (int)$this->z * (int)$frac->x;
+        $obj->y = -((int)$this->x * (int)$frac->z - (int)$this->z * (int)$frac->x);
 	$obj->z = (int)$this->x * (int)$frac->y - (int)$this->y * (int)$frac->x;
         echo "Векторное произведение $this на $frac = ";
         return $obj;
