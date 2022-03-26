@@ -18,24 +18,40 @@ class Book
     public function setTitle($title): Book
     {
         $this->title = $title;
+<<<<<<< HEAD
+=======
+
+>>>>>>> student/Task04
         return $this;
     }
 
     public function setAuthors($authors): Book
     {
         $this->authors = $authors;
+<<<<<<< HEAD
+=======
+
+>>>>>>> student/Task04
         return $this;
     }
 
     public function setPublisher($publisher): Book
     {
         $this->publisher = $publisher;
+<<<<<<< HEAD
+=======
+
+>>>>>>> student/Task04
         return $this;
     }
 
     public function setYear($year): Book
     {
         $this->year = $year;
+<<<<<<< HEAD
+=======
+
+>>>>>>> student/Task04
         return $this;
     }
 
@@ -69,6 +85,7 @@ class Book
         $authorsArray = $this->authors;
         $authors = "";
         for ($i = 0; $i < count($authorsArray); $i++) {
+<<<<<<< HEAD
             $authors.= "Автор".($i + 1).": ".$authorsArray[$i].PHP_EOL;
         }
         return "Id: {$this->id}".PHP_EOL .
@@ -76,5 +93,15 @@ class Book
             $authors.
             "Издательство: {$this->publisher}".PHP_EOL .
             "Год: {$this->year}".PHP_EOL;
+=======
+            $authors .= "Автор" . ($i + 1) . ": " . $authorsArray[$i] . PHP_EOL;
+        }
+
+        return "Id: {$this->id}" . PHP_EOL .
+            "Название: {$this->title}" . PHP_EOL .
+            $authors .
+            "Издательство: {$this->publisher}" . PHP_EOL .
+            "Год: {$this->year}" . PHP_EOL;
+>>>>>>> student/Task04
     }
 }
