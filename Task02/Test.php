@@ -1,4 +1,5 @@
 <?php 
+
 function runTest() 
 {
     // toString test
@@ -27,4 +28,4 @@ function runTest()
     $obj6 = $obj2->vectorProduct($obj3);
     echo $obj6 . PHP_EOL;
 }
-?>
+
