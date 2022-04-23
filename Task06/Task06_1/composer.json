@@ -1,0 +1,20 @@
+{
+    "name": "rodushkinve/task06_1",
+    "autoload": {
+        "psr-4": {
+            "Rodushkinve\\Task06_1\\": [ 
+                "src/",
+                "tests/Unit/"
+            ]
+        },
+        "files": [ "src/Test.php" ]
+    },
+    "authors": [
+        {
+            "name": "Rodushkinve"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
